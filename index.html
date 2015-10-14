@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app=scotchApp>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="keywords" content="Youth Infringement Festival, Festival, Theatre, Arts, Plays, Ottawa, youth" />
@@ -14,27 +14,24 @@
     <header>
         <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="">Youth Infringement Festival</a>
-            </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#festival"><i class="fa fa-home"></i>The Festival</a></li>
-                <li><a href="#getInvolved"><i class="fa fa-shield"></i>Get Involved</a></li>
-                <li><a href="#theTeam"><i class="fa fa-comment"></i>The Team</a></li>
-                <li><a href="#workshop"><i class="fa fa-home"></i>Workshop</a></li>
-                <li><a href="#theShows"><i class="fa fa-shield"></i>The Shows</a></li>
-                <li><a href="#schedule"><i class="fa fa-comment"></i>Schedule</a></li>
-                <li><a href="#pastEvents"><i class="fa fa-home"></i>Past Events</a></li>
-                <li><a href="#contactUs"><i class="fa fa-shield"></i>Contact Us</a></li>
+                <li><a href="#/festival"><i class="fa fa-home"></i>The Festival</a></li>
+                <li><a href="#/getInvolved"><i class="fa fa-shield"></i>Get Involved</a></li>
+                <li><a href="#/theTeam"><i class="fa fa-comment"></i>The Team</a></li>
+                <li><a href="#/workshop"><i class="fa fa-home"></i>Workshop</a></li>
+                <li><a href="#/theShows"><i class="fa fa-shield"></i>The Shows</a></li>
+                <li><a href="#/schedule"><i class="fa fa-comment"></i>Schedule</a></li>
+                <li><a href="#/pastEvents"><i class="fa fa-home"></i>Past Events</a></li>
+                <li><a href="#/contactUs"><i class="fa fa-shield"></i>Contact Us</a></li>
             </ul>
         </div>
         </nav>
     </header>
   <div id="main" ng-app="scotchApp">
-    <ng-view></ng-view>  
+    <ng-view>Loading...</ng-view> 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="angular-route.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
