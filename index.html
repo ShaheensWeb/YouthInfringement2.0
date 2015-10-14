@@ -8,32 +8,67 @@
       <meta name="author" content="Shaheen Ghazazani"/>
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
+      <link href="../css/general.css" rel="stylesheet" />
+      <link rel="icon" href="../images/favicon.ico" > 
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="script.js"></script>
+      <script type="text/javascript">
+        function MM_swapImgRestore() { //v3.0
+          var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+          var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+            if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+
+        function MM_findObj(n, d) { //v4.01
+          var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+            d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+          if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+          for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+          if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+          var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+           if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+      </script>
     </head>
     <body>
         <header>
             <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">Angular Routing Example</a>
+                    <a class="navbar-brand" href="/">Youth Infringement Festival</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> The Festival</a></li>
-                    <li><a href="#getInvolved"><i class="fa fa-shield"></i> Get Involved</a></li>
-                    <li><a href="#theTeam"><i class="fa fa-comment"></i> The Team</a></li>
-                    <li><a href="#workshop"><i class="fa fa-comment"></i> Workshop</a></li>
-                    <li><a href="#theShows"><i class="fa fa-comment"></i> The Shows</a></li>
-                    <li><a href="#schedule"><i class="fa fa-comment"></i> Schedule</a></li>
-                    <li><a href="#pastEvents"><i class="fa fa-comment"></i> Past Events</a></li>
-                    <li><a href="#contactUs"><i class="fa fa-comment"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fa fa-home"></i>The Festival</a></li>
+                    <li><a href="#getInvolved"><i class="fa fa-shield"></i>Get Involved</a></li>
+                    <li><a href="#theTeam"><i class="fa fa-comment"></i>The Team</a></li>
+                    <li><a href="#workshop"><i class="fa fa-home"></i>Workshop</a></li>
+                    <li><a href="#theShows"><i class="fa fa-shield"></i>The Shows</a></li>
+                    <li><a href="#schedule"><i class="fa fa-comment"></i>Schedule</a></li>
+                    <li><a href="#pastEvents"><i class="fa fa-home"></i>Past Events</a></li>
+                    <li><a href="#contactUs"><i class="fa fa-shield"></i>Contact Us</a></li>
                 </ul>
             </div>
             </nav>
         </header>
-        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div class="social">
+          <ul class="grid-unit-twos">
+            <li><a href="http://www.facebook.com/pages/Youth-Infringement/493054220732281?skip_nax_wizard=true" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('facebook','','images/facebook-hover.png',1)"><img src="images/facebook.png" name="facebook" width="36" height="35" border="0" id="facebook" /></a> </li>
+
+            <li><a href="https://twitter.com/YouthInfringe" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('twitter','','images/twitter-hover.png',1)"><img src="images/twitter.png" name="twitter" width="36" height="35" border="0" id="twitter" /></a></li>
+
+            <li><a href="http://youth-infringement-festival.tumblr.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tumblr','','images/tumblr-hover.png',1)"><img src="images/tumblr.png" name="tumblr" width="35" height="35" border="0" id="tumblr" /></a></li>
+
+            <li><a href="https://www.youtube.com/user/YouthInfringe?feature=mhee" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('youtube','','images/youtube-hover.png',1)"><img src="images/youtube.png" name="youtube" width="35" height="35" border="0" id="youtube" /></a></li>
+          </ul>
+        </div>
+      <!-- MAIN CONTENT AND INJECTED VIEWS -->
       <div id="main">
         <!-- angular templating -->
         <!-- this is where content will be injected -->
@@ -44,3 +79,153 @@
 
     </body>
     </html>
+
+
+
+
+
+
+
+</head>
+
+<body onload="MM_preloadImages('images/facebook-thumb.png','images/twitter-thumb.png','images/tumblr-thumb.png','images/youtube-thumb.png')">
+  <div id="wrap">
+    <div class="header">
+      <ul class="nav">
+        <li><a href="index.html"><img src="images/logo.png" /></a></li>
+        <li><a href="festival.html">THE FESTIVAL</a></li>
+        <li><a href="involved.html">GET INVOLVED</a></li>
+        <li><a href="team.html">THE TEAM</a></li>
+        <li><a href="workshop.html">WORKSHOP</a></li>
+        <li><a href="shows.html">THE SHOWS</a></li>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="pastevents.html">PAST EVENTS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    <div class="social">
+      <ul class="grid-unit-twos">
+        <li><a href="http://www.facebook.com/pages/Youth-Infringement/493054220732281?skip_nax_wizard=true" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('facebook','','images/facebook-hover.png',1)"><img src="images/facebook.png" name="facebook" width="36" height="35" border="0" id="facebook" /></a> </li>
+
+        <li><a href="https://twitter.com/YouthInfringe" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('twitter','','images/twitter-hover.png',1)"><img src="images/twitter.png" name="twitter" width="36" height="35" border="0" id="twitter" /></a></li>
+
+        <li><a href="http://youth-infringement-festival.tumblr.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tumblr','','images/tumblr-hover.png',1)"><img src="images/tumblr.png" name="tumblr" width="35" height="35" border="0" id="tumblr" /></a></li>
+
+        <li><a href="https://www.youtube.com/user/YouthInfringe?feature=mhee" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('youtube','','images/youtube-hover.png',1)"><img src="images/youtube.png" name="youtube" width="35" height="35" border="0" id="youtube" /></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content-slider">
+    <div id="content">
+
+      <div id="content-inner-1">
+      <div id="content-inner-2">
+      <div id="content-inner-3">
+      <div id="content-inner-4">
+      <div id="content-inner-5">
+
+      <div id="content-inner">
+        <div class="page" id="page1">
+          <img src="images/contentimage-five.jpg" alt="" title="">
+        </div>
+        <div class="page" id="page2">
+          <img src="images/contentimage-three.jpg" alt="Youth Infringement Festival" title="Youth Infringement Festival" />
+        </div>
+        <div class="page" id="page3">
+          <img src="images/contentimages-one.jpg" alt="" title="" />
+        </div>
+        <div class="page" id="page4">
+          <img src="images/contentimage-four.jpg" alt="" title="" />
+        </div>
+        <div class="page" id="page5">
+          <img src="images/contentimage-three.jpg" alt="Youth Infringement Festival" title="Youth Infringement Festival">
+        </div>
+      </div>    
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+    
+    <ul id="nav">
+      <li class="button" id="button1"><a href="#content-inner-1"></a></li>
+      <li class="button" id="button5"><a href="#content-inner-2"></a></li>
+      <li class="button" id="button2"><a href="#content-inner-3"></a></li>
+      <li class="button" id="button3"><a href="#content-inner-4"></a></li>
+      <li class="button" id="button4"><a href="#content-inner-5"></a></li>
+    </ul>
+  </div>
+  
+
+  <div class="contents">
+    <div class="quote">
+      <p>The annual Youth Infringement Festival is a creative outlet for young artists between the ages of 15 and 25 to create and perform live theatre in a professional setting. Directors, actors, writers and stage managers are picked from Ottawa youth to put together a unique showcase of theatre in Downtown Ottawa at the Arts Court Theatre.</p>
+    </div>
+    <div class="feature">
+      <a href="involved.html"><img src="images/featureoneo.jpg" /></a>
+    </div>
+
+    <div class="feature">
+      <a href="mailto:scripts@youthinfringement.ca"><img src="images/featuretwoo.jpg" /></a>
+    </div>
+
+    <div class="feature">
+      <a href="festival.html"><img src="images/featurethreeo.jpg" /></a>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="footer-third">
+      <h1>YOUTH INFRINGEMENT</h1>
+      <img src="images/rule.png" />
+      <ul>
+        <li><a href"index.html"><p>HOME</p></a></li>
+        <li><h2>•</h2></li>
+        <li><a href"festival.html"><p>THE FESTIVAL</p></a></li>
+        <li><h2>•</h2></li>
+        <li><a href"involved.html"><p>GET INVOLVED</p></a></li>
+        <li><h2>•</h2></li>
+        <li><a href"team.html"><p>THE TEAM</p></a></li>
+
+        <li><a href"shows.html"><p>THE SHOW</p></a></li>
+        <li><h2>•</h2></li>
+        <li><a href"schedule.html"><p>SCHEDULE</p></a></li>
+        <li><h2>•</h2></li>
+        <li><a href"pastevents.html"><p>PAST EVENTS</p></a></li>
+        <li><h2>•</h2></li>
+        <li><a href"contact.html"><p>CONTACT US</p></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-third footer-third">
+      <h1>YOU CAN FIND US HERE</h1>
+      <img src="images/rule.png" />
+      <ul>
+        <li><a href="http://www.facebook.com/pages/Youth-Infringement/493054220732281?skip_nax_wizard=true" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('footer-facebook','','images/facebook-hover.png',1)"><img src="images/facebook.png" name="footer-facebook" width="26" height="27" border="0" id="footer-facebook" /></a></li>
+
+        <li><a href="https://twitter.com/YouthInfringe" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('footer-twitter','','images/twitter-hover.png',1)"><img src="images/twitter.png" name="footer-twitter" width="26" height="27" border="0" id="footer-twitter" /></a></li>
+
+        <li><a href="http://youth-infringement-festival.tumblr.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tumblr-footer','','images/tumblr-hover.png',1)"><img src="images/tumblr.png" name="tumblr-footer" width="26" height="27" border="0" id="tumblr-footer" /></a></li>
+
+        <li><a href="https://www.youtube.com/user/YouthInfringe?feature=mhee" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('youtube-footer','','images/youtube-hover.png',1)"><img src="images/youtube.png" name="youtube-footer" width="26" height="27" border="0" id="youtube-footer" /></a></li>
+
+      </ul>
+    </div>
+
+    <div class="footer-third footer-third">
+      <h1>CONTACT US</h1>
+      <img src="images/rule.png" />
+      <a href="info@youthinfringement.ca"><P>INFO@YOUTHINFRINGEMENT.CA</P></a>
+      <a href="scripts@youthinfringement.ca"><P>SCRIPTS@YOUTHINFRINGEMENT.CA</P></a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>©COPYRIGHT YOUTH INFRINGEMENT 2014 </p>
+  </div>
+
+  </div>
+</body>
+</html>
