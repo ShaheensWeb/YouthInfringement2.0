@@ -1,41 +1,40 @@
-<!-- index.html -->
-    <!DOCTYPE html>
-    <html ng-app>
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta name="keywords" content="Youth Infringement Festival, Festival, Theatre, Arts, Plays, Ottawa, youth" />
-      <meta name="description" content="Youth Infringement Festival produces a huge variety of theatre genres. What ties them all together is the value we find in the artists’ personal voice, and how the festival creates an opportunity for their voices to be heard. The Festival strives to produce theatre that is relevant and accessible to Youth." />
-      <meta name="author" content="Shaheen Ghazazani"/>
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-      <link href="css/general.css" rel="stylesheet" />
-      <link rel="icon" href="../images/favicon.ico" > 
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="">Youth Infringement Festival</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#festival"><i class="fa fa-home"></i>The Festival</a></li>
-                    <li><a href="#getInvolved"><i class="fa fa-shield"></i>Get Involved</a></li>
-                    <li><a href="#theTeam"><i class="fa fa-comment"></i>The Team</a></li>
-                    <li><a href="#workshop"><i class="fa fa-home"></i>Workshop</a></li>
-                    <li><a href="#theShows"><i class="fa fa-shield"></i>The Shows</a></li>
-                    <li><a href="#schedule"><i class="fa fa-comment"></i>Schedule</a></li>
-                    <li><a href="#pastEvents"><i class="fa fa-home"></i>Past Events</a></li>
-                    <li><a href="#contactUs"><i class="fa fa-shield"></i>Contact Us</a></li>
-                </ul>
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="Youth Infringement Festival, Festival, Theatre, Arts, Plays, Ottawa, youth" />
+  <meta name="description" content="Youth Infringement Festival produces a huge variety of theatre genres. What ties them all together is the value we find in the artists’ personal voice, and how the festival creates an opportunity for their voices to be heard. The Festival strives to produce theatre that is relevant and accessible to Youth." />
+  <meta name="author" content="Shaheen Ghazazani"/>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link href="css/general.css" rel="stylesheet" />
+  <link rel="icon" href="../images/favicon.ico" > 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">Youth Infringement Festival</a>
             </div>
-            </nav>
-        </header>
-      <div id="main" ng-app="scotchApp">
-        <div ng-view></div>
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-      <script src="script.js"></script>
-    </body>
-    </html>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#festival"><i class="fa fa-home"></i>The Festival</a></li>
+                <li><a href="#getInvolved"><i class="fa fa-shield"></i>Get Involved</a></li>
+                <li><a href="#theTeam"><i class="fa fa-comment"></i>The Team</a></li>
+                <li><a href="#workshop"><i class="fa fa-home"></i>Workshop</a></li>
+                <li><a href="#theShows"><i class="fa fa-shield"></i>The Shows</a></li>
+                <li><a href="#schedule"><i class="fa fa-comment"></i>Schedule</a></li>
+                <li><a href="#pastEvents"><i class="fa fa-home"></i>Past Events</a></li>
+                <li><a href="#contactUs"><i class="fa fa-shield"></i>Contact Us</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+  <div id="main" ng-app="scotchApp">
+    <ng-view></ng-view>  
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
