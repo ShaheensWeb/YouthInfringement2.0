@@ -11,48 +11,51 @@
             .when('/', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
-            });
+            })
 
 			.when('/festival', {
                 templateUrl : 'pages/festival.html',
                 controller  : 'festivalController'
-            });
+            })
 
             .when('/getInvolved', {
                 templateUrl : 'pages/getInvolved.html',
                 controller  : 'getInvolvedController'
-            });
+            })
 
             .when('/theTeam', {
                 templateUrl : 'pages/theTeam.html',
                 controller  : 'theTeamController'
-            });
+            })
 
             .when('/workshop', {
                 templateUrl : 'pages/workshop.html',
                 controller  : 'workshopController'
-            });
+            })
 
             .when('/theShows', {
                 templateUrl : 'pages/theShows.html',
                 controller  : 'theShowsController'
-            });
+            })
 
             .when('/schedule', {
                 templateUrl : 'pages/schedule.html',
                 controller  : 'scheduleController'
-            });
+            })
 
             .when('/pastEvents', {
                 templateUrl : 'pages/pastEvents.html',
                 controller  : 'pastEventsController'
-            });
+            })
 
             .when('/contactUs', {
                 templateUrl : 'pages/contactUs.html',
                 controller  : 'contactUsController'
-            });
+            })
 
+            .otherwise({
+            	redirectTo: '/'
+            });
     });
 
     // create the controller and inject Angular's $scope
