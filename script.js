@@ -11,17 +11,17 @@
             .when('/', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
-            })
+            });
 
 			.when('/festival', {
                 templateUrl : 'pages/festival.html',
                 controller  : 'festivalController'
-            })
+            });
 
             .when('/getInvolved', {
                 templateUrl : 'pages/getInvolved.html',
                 controller  : 'getInvolvedController'
-            })
+            });
 
             .when('/theTeam', {
                 templateUrl : 'pages/theTeam.html',
