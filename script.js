@@ -11,12 +11,17 @@
             .when('/', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
-            })
+            });
+
+			.when('/festival', {
+                templateUrl : 'pages/festival.html',
+                controller  : 'festivalController'
+            });
 
             .when('/getInvolved', {
                 templateUrl : 'pages/getInvolved.html',
                 controller  : 'getInvolvedController'
-            })
+            });
 
             .when('/theTeam', {
                 templateUrl : 'pages/theTeam.html',
@@ -54,6 +59,10 @@
     scotchApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
+    });
+
+	scotchApp.controller('festivalController', function($scope) {
+        $scope.message = 'Look! I am an festival controller.';
     });
 
     scotchApp.controller('getInvolvedController', function($scope) {
