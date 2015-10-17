@@ -11,27 +11,31 @@
   <link rel="icon" href="../images/favicon.ico" > 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-        <div class="container">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/festival"><i class="fa fa-home"></i>The Festival</a></li>
-                <li><a href="#/getInvolved"><i class="fa fa-shield"></i>Get Involved</a></li>
-                <li><a href="#/theTeam"><i class="fa fa-comment"></i>The Team</a></li>
-                <li><a href="#/workshop"><i class="fa fa-home"></i>Workshop</a></li>
-                <li><a href="#/theShows"><i class="fa fa-shield"></i>The Shows</a></li>
-                <li><a href="#/schedule"><i class="fa fa-comment"></i>Schedule</a></li>
-                <li><a href="#/pastEvents"><i class="fa fa-home"></i>Past Events</a></li>
-                <li><a href="#/contactUs"><i class="fa fa-shield"></i>Contact Us</a></li>
-            </ul>
+    <div id="wrap">
+
+        <div class="header" style="position: relative; width: 100%; left:">
+            <nav class="navbar navbar-default">
+            <div class="container" style="position: relative; left:72px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/"><img src="images/logo.png"></a></li>
+                    <li><a href="#/getInvolved">Get Involved</a></li>
+                    <li><a href="#/theTeam">The Team</a></li>
+                    <li><a href="#/workshop">Workshop</a></li>
+                    <li><a href="#/theShows">The Shows</a></li>
+                    <li><a href="#/schedule">Schedule</a></li>
+                    <li><a href="#/pastEvents">Past Events</a></li>
+                    <li><a href="#/contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            </nav>
         </div>
-        </nav>
-    </header>
-  <div id="main" ng-app="scotchApp">
-    <ng-view>Loading...</ng-view> 
+      <div id="main" ng-app="scotchApp" style="position:relative;">
+                <ng-view>Loading...</ng-view>
+      </div>
   </div>
   <script src="angular.min.js"></script>
   <script src="angular-route.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/socialMedia.js"></script>
 </body>
 </html>
